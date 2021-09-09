@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Eco Chic home" />
+    <link rel="stylesheet" href="style.css" />
+    <title>EcoChic</title>
+  </head>
+  <body>
+    <header>
+      <div id="header-left">
+        <img id="logo" alt="Eco Chic company logo" src="photos/logo.JPEG" />
+      </div>
+      <div id="header-right">
+        <nav>
+          <ul id="nav__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="#"><button>Contact</button></a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div id="slideshow-container">
+          <div class="slide fade">
+            <img
+              src="https://theyearofmud.com/wp-content/uploads/2017/06/american-clay-forte-big-wall.jpg"
+              alt="American Clay house"
+              class="slide-img"
+            />
+            <img
+              src="https://i.pinimg.com/originals/d5/1a/52/d51a525c5867d23feddf546a7f1dc3cf.jpg"
+              alt="American Clay wall"
+              class="slide-img"
+            />
+            <img
+              src="https://4.bp.blogspot.com/_6POIw6nE6iY/TLCfH2ip38I/AAAAAAAAALQ/vMmGAa-xCKk/s1600/texture+wet.jpg"
+              alt="Clay wall"
+              class="slide-img"
+            />
+          </div>
+          <div class="slide-text">
+            <h1 id="slide-title">Eco Chic Walls</h1>
+            <p id="slide-subtitle">
+              Delivering Excellence for over thirty years! Eco Chic Walls has
+              the skillset and attention to detail that your job deserves! From
+              your basic paint job to your high end faux or plasters, we have
+              you covered!
+            </p>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+
+      <section id="services-container">
+        <h2 id="services-title">Services</h2>
+        <div id="services-tiles">
+          <div class="services-tile">
+            <img
+              src="https://i1.wp.com/ecochicwalls.com/wp-content/uploads/2020/04/redamericanclay-1.jpg?resize=530%2C353&ssl=1"
+              class="services-img"
+              alt="red painted interior"
+            />
+            <h3 class="services-title">Painting and Staining</h3>
+            <p class="services-text">
+              Whether you are looking for a beautiful paint, or stain job, or
+              something a little more... we've got you covered!
+            </p>
+            <a href="#" class="services-link">Read More</a>
+          </div>
+          <div class="services-tile">
+            <img
+              src="https://i0.wp.com/ecochicwalls.com/wp-content/uploads/2020/04/2015-03-16-17.32.34.jpg?resize=750%2C750&ssl=1"
+              class="services-img"
+              alt="distressed cabinet"
+            />
+            <h3 class="services-title">Distressed Cabinets</h3>
+          </div>
+          <div class="services-tile">
+            <img
+              src="https://i1.wp.com/ecochicwalls.com/wp-content/uploads/2020/04/2016-10-15-14.04.48.jpg?fit=750%2C1000&ssl=1"
+              class="services-img"
+              alt="american clay walls"
+            />
+            <h3 class="services-title">American Clay</h3>
+            <p class="services-text">
+              American Clay creates surfaces reminiscent of classic interiors
+              throughout history. Bring the natural warmth and sunshine of
+              Provence into your kitchen.
+            </p>
+            <a href="#" class="services-link">Read More</a>
+          </div>
+          <div class="services-tile">
+            <img
+              src="http://cdnassets.hw.net/ac/b8/35b6d6ea467280957223ed2d7383/tmp8f9-2etmp-tcm17-393985.jpg"
+              class="services-img"
+              alt="wood-grain garage door"
+            />
+            <h3 class="services-title">Garage Doors</h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="why-container">
+        <h2 id="why-title">Why Use Eco Chic Walls?</h2>
+        <ul id="why-list">
+          <li class="why-item">attention to detail</li>
+          <li class="why-item">color expert / artist</li>
+          <li class="why-item">neat and clean</li>
+          <li class="why-item">
+            small company equates to fewer people (germs) in your home
+          </li>
+          <li class="why-item">Free estimates</li>
+          <li class="why-item">highly trained</li>
+          <li class="why-item">great attitude</li>
+          <li class="why-item">many options</li>
+        </ul>
+      </section>
+
+      <section id="featured-container">
+        <div id="featured-1">
+          <h2 id="featured-title">Featured Product</h2>
+          <p id="featured-subtitle">
+            A paint kills 99% of germs for up to four years?
+          </p>
+        </div>
+        <div id="featured-2">
+          <h3 id="featured-title-2">Paint Shield!</h3>
+          <p id="featured-subtitle-2">
+            A paint kills 99% of germs for up to four years? Your immune system
+            works best when its load is minimal. Take those germs out of your
+            health ‘equation’! ……Up to four years!
+          </p>
+        </div>
+      </section>
+
+      <section id="experience-container">
+        <div id="experience-1">
+          <h2 id="experience-title">Experience counts!</h2>
+          <p id="experience-subtitle">Get it done right the first time!</p>
+        </div>
+        <div id="experience-2">
+          <div class="experience-item">
+            <h3 class="item-title">15 years</h3>
+            <p class="item-subtitle">Journeyman Painter</p>
+          </div>
+          <div class="experience-item">
+            <h3 class="item-title">Published</h3>
+            <p class="item-subtitle">Better Homes and Gardens</p>
+          </div>
+          <div class="experience-item">
+            <h3 class="item-title">100%</h3>
+            <p class="item-subtitle">Satisfaction Guaranteed</p>
+          </div>
+        </div>
+        <div id="experience-3">
+          <p class="experience-3-item">License #747340</p>
+          <p class="experience-3-item">Bonded</p>
+          <p class="experience-3-item">Insured</p>
+        </div>
+      </section>
+
+      <section id="customer-container">
+        <h2 id="customer-title">What Our Customers are Saying!</h2>
+        <div id="customer-container">
+          <div class="customer-card">
+            <h3 class="customer-id">Michelle T.</h3>
+            <p class="customer-location">Morro</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
