@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Eco Chic home" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>EcoChic</title>
   </head>
   <body>
@@ -26,44 +26,53 @@
       </div>
     </header>
 
+    <!-- test
+    https://i1.wp.com/ecochicwalls.com/wp-content/uploads/2020/04/redamericanclay-1.jpg?resize=530%2C353&ssl=1 -->
+
+    <!-- https://theyearofmud.com/wp-content/uploads/2017/06/american-clay-forte-big-wall.jpg -->
+    <!-- https://i.pinimg.com/originals/d5/1a/52/d51a525c5867d23feddf546a7f1dc3cf.jpg -->
+    <!-- https://4.bp.blogspot.com/_6POIw6nE6iY/TLCfH2ip38I/AAAAAAAAALQ/vMmGAa-xCKk/s1600/texture+wet.jpg (no-longer works) -->
     <main>
       <section>
-        <div id="slideshow-container">
-          <div class="slide fade">
-            <img
-              src="https://theyearofmud.com/wp-content/uploads/2017/06/american-clay-forte-big-wall.jpg"
-              alt="American Clay house"
-              class="slide-img"
-            />
-            <img
-              src="https://i.pinimg.com/originals/d5/1a/52/d51a525c5867d23feddf546a7f1dc3cf.jpg"
-              alt="American Clay wall"
-              class="slide-img"
-            />
-            <img
-              src="https://4.bp.blogspot.com/_6POIw6nE6iY/TLCfH2ip38I/AAAAAAAAALQ/vMmGAa-xCKk/s1600/texture+wet.jpg"
-              alt="Clay wall"
-              class="slide-img"
-            />
-          </div>
-          <div class="slide-text">
-            <h1 id="slide-title">Eco Chic Walls</h1>
-            <p id="slide-subtitle">
-              Delivering Excellence for over thirty years! Eco Chic Walls has
-              the skillset and attention to detail that your job deserves! From
-              your basic paint job to your high end faux or plasters, we have
-              you covered!
-            </p>
+        <div class="carousel">
+          <button class="carousel__button carousel__button--left is-hidden">
+            <img src="./chevron-left-solid.svg" alt="left button" />
+          </button>
+          <div class="carousel__track-container">
+            <ul class="carousel__track">
+              <li class="carousel__slide current-slide">
+                <img
+                  src="https://theyearofmud.com/wp-content/uploads/2017/06/american-clay-forte-big-wall.jpg"
+                  alt="slide image"
+                  class="carousel__image"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  src="https://i.pinimg.com/originals/d5/1a/52/d51a525c5867d23feddf546a7f1dc3cf.jpg"
+                  alt="slide image"
+                  class="carousel__image"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  src="https://i1.wp.com/ecochicwalls.com/wp-content/uploads/2020/04/redamericanclay-1.jpg?resize=530%2C353&ssl=1"
+                  alt="slide image"
+                  class="carousel__image"
+                />
+              </li>
+            </ul>
           </div>
 
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+          <button class="carousel__button carousel__button--right">
+            <img src="./chevron-right-solid.svg" alt="right button" />
+          </button>
 
-        <div class="dots">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
+          <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+          </div>
         </div>
       </section>
 
@@ -185,5 +194,7 @@
         </div>
       </section>
     </main>
+
+    <script src="js/carousel.js"></script>
   </body>
 </html>
