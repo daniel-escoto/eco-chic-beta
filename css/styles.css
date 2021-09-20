@@ -1,7 +1,7 @@
 /* variables */
 :root {
   --primary: #126b0a;
-  --secondary: #d4d4d4;
+  --secondary: #ffffff;
   --nav: #ffffff;
 }
 /* reset */
@@ -75,7 +75,10 @@ h1 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.5em;
+  font-weight: lighter;
+  font-style: italic;
+  color: var(--primary);
 }
 
 h2 {
@@ -107,7 +110,7 @@ h4 {
 }
 
 .site-nav h1 {
-  grid-column: 1 / 5;
+  grid-column: 1 / 6;
   grid-row: 1;
   padding-bottom: 5px;
   align-self: center;
@@ -171,6 +174,36 @@ h4 {
   align-self: center;
 
   margin-bottom: 8px;
+}
+
+/* services */
+#services h3 {
+  grid-column: 1 / 9;
+  margin-left: 5%;
+
+  position: relative;
+  top: 15px;
+}
+
+.service {
+  grid-column: 1 / 9;
+  text-align: center;
+
+  margin: 15px 5%;
+  padding: 25px 45px;
+  border: 1.5px solid #39c731;
+  border-radius: 25px;
+}
+
+.service img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.service p {
+  text-align: left;
 }
 
 /* small tablet styles */
