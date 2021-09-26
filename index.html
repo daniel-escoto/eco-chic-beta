@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- lightgallery -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./node_modules/lightgallery/css/lightgallery.css"
+    />
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./node_modules/lightgallery/css/lg-zoom.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./node_modules/lightgallery/css/lg-thumbnail.css"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
     <script
       src="https://kit.fontawesome.com/1ce78da824.js"
@@ -124,6 +143,62 @@
           </form>
         </div>
       </section>
+
+      <hr />
+
+      <section id="gallery" class="grid">
+        `
+        <h3>Gallery</h3>
+        <div class="gallery-content">
+          <div id="lightgallery">
+            <a href="./assets/photos/preview_1.JPG">
+              <img
+                src="./assets/photos/preview_1.JPG"
+                class="hover-shadow"
+                alt="stained cabinet"
+            /></a>
+            <a href="./assets/photos/preview_2.JPG">
+              <img
+                src="./assets/photos/preview_2.JPG"
+                class="hover-shadow"
+                alt="stained cabinet"
+            /></a>
+            <a href="./assets/photos/preview_3.JPG">
+              <img
+                src="./assets/photos/preview_3.JPG"
+                class="hover-shadow"
+                alt="stained cabinet"
+            /></a>
+            <a href="./assets/photos/preview_4.JPG">
+              <img
+                src="./assets/photos/preview_4.JPG"
+                class="hover-shadow"
+                alt="stained cabinet"
+            /></a>
+          </div>
+          <img
+            src="./assets/photos/preview_1.JPG"
+            class="hover-shadow"
+            alt="stained cabinet"
+          />
+          <img
+            src="./assets/photos/preview_2.JPG"
+            class="hover-shadow"
+            alt="stained cabinet"
+          />
+          <img
+            src="./assets/photos/preview_3.JPG"
+            class="hover-shadow"
+            alt="stained cabinet"
+          />
+          <img
+            src="./assets/photos/preview_4.JPG"
+            class="hover-shadow"
+            alt="stained cabinet"
+          />
+          <a href="#"><button class="button">See More</button></a>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -148,5 +223,17 @@
     </footer>
 
     <script src="./js/index.js"></script>
+
+    <!-- lightgallery -->
+    <script src="./node_modules/lightgallery/lightgallery.umd.js"></script>
+
+    <script src="./node_modules/lightgallery/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script src="./node_modules/lightgallery/plugins/zoom/lg-zoom.umd.js"></script>
+
+    <script type="text/javascript">
+      lightGallery(document.getElementById("lightgallery"), {
+        plugins: [lgZoom, lgThumbnail],
+      });
+    </script>
   </body>
 </html>

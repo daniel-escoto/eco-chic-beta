@@ -219,14 +219,6 @@ h4 {
   margin: 20px 0; */
 }
 
-.about-content {
-  grid-column: 1 / 9;
-  text-align: center;
-
-  margin: 15px 5%;
-  padding: 0px 45px 40px 45px;
-}
-
 #about h3 {
   color: var(--secondary);
   grid-column: 1 / 9;
@@ -234,6 +226,14 @@ h4 {
 
   position: relative;
   top: 15px;
+}
+
+.about-content {
+  grid-column: 1 / 9;
+  text-align: center;
+
+  margin: 15px 5%;
+  padding: 0px 45px 40px 45px;
 }
 
 .about-content img {
@@ -287,7 +287,7 @@ h4 {
   align-items: center;
 }
 
-hr {
+.h-divider hr {
   width: 33%;
   height: 0.5px;
   background-color: rgb(75, 75, 75);
@@ -315,8 +315,50 @@ hr {
 
 #contact .button {
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
+hr {
+  height: 0.1px;
+  background-color: grey;
+}
+
+/* gallery */
+#gallery h3 {
+  grid-column: 1 / 9;
+  margin-left: 5%;
+
+  position: relative;
+  top: 15px;
+}
+
+.gallery-content {
+  grid-column: 1 / 9;
+  text-align: center;
+
+  margin: 15px 5%;
+  padding: 0px 45px 40px 45px;
+}
+
+.gallery-content img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+
+  margin: 15px 0 20px 0;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* footer */
 footer {
   padding: 30px 20px;
   background-color: var(--primary);
