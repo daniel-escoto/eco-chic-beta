@@ -27,11 +27,11 @@ body {
 }
 
 .button {
-  background: var(--primary);
-  border: 2px solid var(--primary);
+  background: #17940b;
+  border: 2px solid #17940b;
   color: white;
   opacity: 0.8;
-  padding: 6px 12px;
+  padding: 8px 16px;
   border-radius: 20px;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   display: inline-block;
@@ -80,6 +80,7 @@ h3 {
   font-weight: lighter;
   font-style: italic;
   color: var(--primary);
+  z-index: 0;
 }
 
 h2 {
@@ -104,6 +105,11 @@ h4 {
 .site-nav {
   padding: 0 20px;
   background: var(--primary);
+  z-index: 2;
+}
+
+.active a {
+  border-bottom: 3px solid var(--nav);
 }
 
 .nav-dropdown {
@@ -140,6 +146,12 @@ h4 {
   color: var(--nav);
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .is-hidden {
   display: none;
 }
@@ -160,7 +172,7 @@ h4 {
 #welcome h2 {
   color: rgb(252, 247, 238);
   grid-row: 1;
-  grid-column: 1 / 7;
+  grid-column: 1 / 9;
 
   align-self: flex-end;
 
@@ -175,6 +187,19 @@ h4 {
   align-self: center;
 
   margin-bottom: 8px;
+}
+
+#welcome a {
+  grid-row: 2;
+  grid-column: 7 / 9;
+
+  align-self: center;
+}
+
+#welcome a button {
+  background: #17940b;
+  padding: 8px 16px;
+  border: 2px solid #17940b;
 }
 
 /* services */
@@ -397,6 +422,30 @@ footer i {
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
+  /* make buttons bigger */
+  .button {
+    font-size: 1.1em;
+  }
+
+  #welcome {
+    margin-bottom: 0px;
+    padding-top: 140px;
+    padding-bottom: 25px;
+    padding-left: 5%;
+  }
+
+  #welcome h2 {
+    font-size: 2em;
+  }
+
+  #services h3 {
+    margin-left: 10%;
+  }
+
+  .service {
+    margin: 15px 10%;
+    padding: 40px 60px;
+  }
 }
 /* large tablet and laptop styles */
 @media screen and (min-width: 960px) {
