@@ -438,7 +438,10 @@ footer i {
     font-size: 2em;
   }
 
-  #services h3 {
+  #services h3,
+  #about h3,
+  #contact h3,
+  #gallery h3 {
     margin-left: 10%;
   }
 
