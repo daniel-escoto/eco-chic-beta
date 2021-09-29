@@ -534,6 +534,25 @@ footer i {
     margin-right: 20%;
   }
   /* have about and contact go horizontal */
+  #about {
+    min-height: 600px;
+  }
+
+  .about-content {
+    display: flex;
+    align-items: center;
+
+    margin-top: 0px;
+  }
+
+  .about-content img {
+    height: 350px;
+    width: 350px;
+  }
+
+  .about-content p {
+    margin-left: 40px;
+  }
   /* gallery is 2x2 */
 }
 /* desktop styles */
