@@ -46,10 +46,12 @@ const modifyHighlight = () => {
   });
 
   navLi.forEach((li) => {
-    li.classList.remove("active");
+    const childNode = li.childNodes[0];
+
+    childNode.classList.remove("active");
 
     if (li.textContent.toLowerCase() === current) {
-      li.classList.add("active");
+      childNode.classList.add("active");
     }
   });
 };
