@@ -542,7 +542,8 @@ footer i {
     display: flex;
     align-items: center;
 
-    margin-top: 0px;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 
   .about-content img {
@@ -553,7 +554,41 @@ footer i {
   .about-content p {
     margin-left: 40px;
   }
-  /* gallery is 2x2 */
+
+  .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 10%;
+  }
+
+  #contact form {
+    max-width: 350px;
+    margin: 20px 0;
+  }
+
+  .h-divider {
+    display: none;
+  }
+
+  .v-divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  /* .v-divider p {
+    font-size: 1.33em;
+  } */
+
+  .v-divider hr {
+    /* width: 33%;
+    height: 0.5px; */
+    width: 0.5px;
+    height: 45%;
+    background-color: rgb(75, 75, 75);
+  }
 }
 /* desktop styles */
 @media screen and (min-width: 1200px) {
