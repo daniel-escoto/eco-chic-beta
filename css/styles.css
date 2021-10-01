@@ -457,6 +457,11 @@ footer i {
     margin: 15px 10%;
     padding: 40px 60px;
   }
+
+  .gallery-content img {
+    height: 500px;
+    width: 500px;
+  }
 }
 /* large tablet and laptop styles */
 @media screen and (min-width: 960px) {
@@ -578,16 +583,22 @@ footer i {
     height: 100%;
   }
 
-  /* .v-divider p {
-    font-size: 1.33em;
-  } */
-
   .v-divider hr {
     /* width: 33%;
     height: 0.5px; */
     width: 0.5px;
     height: 45%;
     background-color: rgb(75, 75, 75);
+  }
+
+  .gallery-content img {
+    height: 45%;
+    width: 45%;
+    margin: 1% 1%;
+  }
+
+  #lightgallery {
+    padding-bottom: 50px;
   }
 }
 /* desktop styles */
