@@ -538,7 +538,7 @@ footer i {
     margin-left: 0px;
     margin-right: 20%;
   }
-  /* have about and contact go horizontal */
+
   #about {
     min-height: 600px;
   }
@@ -546,9 +546,6 @@ footer i {
   .about-content {
     display: flex;
     align-items: center;
-
-    margin-top: 5%;
-    margin-bottom: 5%;
   }
 
   .about-content img {
@@ -603,4 +600,65 @@ footer i {
 }
 /* desktop styles */
 @media screen and (min-width: 1200px) {
+  .site-nav {
+    padding: 0 20%;
+  }
+
+  #welcome {
+    padding: 0 20%;
+  }
+
+  #services h3,
+  #about h3 {
+    /* margin: 0 20%; */
+    margin-left: 20%;
+  }
+
+  #service-1,
+  #service-3 {
+    margin-left: 30%;
+  }
+
+  #service-2,
+  #service-4 {
+    margin-right: 30%;
+  }
+
+  .about-content {
+    margin: 40px 10%;
+  }
+
+  .about-content img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .about-content p {
+    margin-left: 60px;
+    font-size: 1.3em;
+  }
+
+  #contact h3 {
+    margin-left: 20%;
+  }
+
+  .contact-content {
+    margin: 5% 20%;
+  }
+
+  #contact form {
+    max-width: 425px;
+  }
+
+  #gallery h3 {
+    margin-left: 20%;
+  }
+
+  .gallery-content {
+    margin: 15px 10%;
+  }
+
+  footer {
+    padding: 30px 10%;
+  }
 }
