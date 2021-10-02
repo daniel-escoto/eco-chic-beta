@@ -4,186 +4,231 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Eco Chic home" />
-    <link rel="stylesheet" href="style.css" />
-    <title>EcoChic</title>
+
+    <!-- lightgallery -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./node_modules/lightgallery/css/lightgallery.css"
+    />
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./node_modules/lightgallery/css/lg-zoom.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./node_modules/lightgallery/css/lg-thumbnail.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1ce78da824.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>(1) Eco Chic</title>
   </head>
   <body>
-    <header>
-      <div id="header-left">
-        <img id="logo" alt="Eco Chic company logo" src="photos/logo.JPEG" />
-      </div>
-      <div id="header-right">
-        <nav>
-          <ul id="nav__links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </nav>
-        <a class="cta" href="#"><button>Contact</button></a>
-      </div>
-    </header>
+    <nav class="site-nav grid">
+      <h1>(2) Eco Chic Walls</h1>
+      <span
+        ><a class="bar-icon"><i class="fas fa-bars fa-2x"></i> </a
+      ></span>
+      <ul class="nav-dropdown is-hidden">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
 
     <main>
-      <section>
-        <div id="slideshow-container">
-          <div class="slide fade">
-            <img
-              src="https://theyearofmud.com/wp-content/uploads/2017/06/american-clay-forte-big-wall.jpg"
-              alt="American Clay house"
-              class="slide-img"
-            />
-            <img
-              src="https://i.pinimg.com/originals/d5/1a/52/d51a525c5867d23feddf546a7f1dc3cf.jpg"
-              alt="American Clay wall"
-              class="slide-img"
-            />
-            <img
-              src="https://4.bp.blogspot.com/_6POIw6nE6iY/TLCfH2ip38I/AAAAAAAAALQ/vMmGAa-xCKk/s1600/texture+wet.jpg"
-              alt="Clay wall"
-              class="slide-img"
-            />
-          </div>
-          <div class="slide-text">
-            <h1 id="slide-title">Eco Chic Walls</h1>
-            <p id="slide-subtitle">
-              Delivering Excellence for over thirty years! Eco Chic Walls has
-              the skillset and attention to detail that your job deserves! From
-              your basic paint job to your high end faux or plasters, we have
-              you covered!
-            </p>
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-
-        <div class="dots">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+      <section id="welcome" class="grid">
+        <h2>(3) Lorem ipsum dolor sit amet.</h2>
+        <p>
+          (4) Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Recusandae accusamus molestiae delectus beatae sapiente labore odit
+          totam dolorem inventore vel.
+        </p>
+        <a href="#contact"><button class="button">(5) Contact</button></a>
       </section>
 
-      <section id="services-container">
-        <h2 id="services-title">Services</h2>
-        <div id="services-tiles">
-          <div class="services-tile">
-            <img
-              src="https://i1.wp.com/ecochicwalls.com/wp-content/uploads/2020/04/redamericanclay-1.jpg?resize=530%2C353&ssl=1"
-              class="services-img"
-              alt="red painted interior"
-            />
-            <h3 class="services-title">Painting and Staining</h3>
-            <p class="services-text">
-              Whether you are looking for a beautiful paint, or stain job, or
-              something a little more... we've got you covered!
-            </p>
-            <a href="#" class="services-link">Read More</a>
-          </div>
-          <div class="services-tile">
-            <img
-              src="https://i0.wp.com/ecochicwalls.com/wp-content/uploads/2020/04/2015-03-16-17.32.34.jpg?resize=750%2C750&ssl=1"
-              class="services-img"
-              alt="distressed cabinet"
-            />
-            <h3 class="services-title">Distressed Cabinets</h3>
-          </div>
-          <div class="services-tile">
-            <img
-              src="https://i1.wp.com/ecochicwalls.com/wp-content/uploads/2020/04/2016-10-15-14.04.48.jpg?fit=750%2C1000&ssl=1"
-              class="services-img"
-              alt="american clay walls"
-            />
-            <h3 class="services-title">American Clay</h3>
-            <p class="services-text">
-              American Clay creates surfaces reminiscent of classic interiors
-              throughout history. Bring the natural warmth and sunshine of
-              Provence into your kitchen.
-            </p>
-            <a href="#" class="services-link">Read More</a>
-          </div>
-          <div class="services-tile">
-            <img
-              src="http://cdnassets.hw.net/ac/b8/35b6d6ea467280957223ed2d7383/tmp8f9-2etmp-tcm17-393985.jpg"
-              class="services-img"
-              alt="wood-grain garage door"
-            />
-            <h3 class="services-title">Garage Doors</h3>
-          </div>
-        </div>
-      </section>
-
-      <section id="why-container">
-        <h2 id="why-title">Why Use Eco Chic Walls?</h2>
-        <ul id="why-list">
-          <li class="why-item">attention to detail</li>
-          <li class="why-item">color expert / artist</li>
-          <li class="why-item">neat and clean</li>
-          <li class="why-item">
-            small company equates to fewer people (germs) in your home
-          </li>
-          <li class="why-item">Free estimates</li>
-          <li class="why-item">highly trained</li>
-          <li class="why-item">great attitude</li>
-          <li class="why-item">many options</li>
-        </ul>
-      </section>
-
-      <section id="featured-container">
-        <div id="featured-1">
-          <h2 id="featured-title">Featured Product</h2>
-          <p id="featured-subtitle">
-            A paint kills 99% of germs for up to four years?
+      <section id="services" class="grid">
+        <h3>(6) What I Can Do for You</h3>
+        <div id="service-1" class="service">
+          <img src="./assets/photos/sinks.JPG" alt="some sinks" />
+          <h4>(7) Lorem ipsum dolor sit.</h4>
+          <p>
+            (8) Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            rem incidunt mollitia numquam laborum quaerat exercitationem at
+            voluptates nulla? Quasi ratione, corrupti voluptatum odio omnis nam
+            tenetur unde alias reprehenderit quis iure eveniet optio quas
+            expedita. Nostrum porro quaerat similique quod quas? Nobis
+            perspiciatis itaque quae ipsum harum voluptas quam.
           </p>
         </div>
-        <div id="featured-2">
-          <h3 id="featured-title-2">Paint Shield!</h3>
-          <p id="featured-subtitle-2">
-            A paint kills 99% of germs for up to four years? Your immune system
-            works best when its load is minimal. Take those germs out of your
-            health ‘equation’! ……Up to four years!
+        <div id="service-2" class="service">
+          <img src="./assets/photos/sinks.JPG" alt="some sinks" />
+          <h4>(9) Lorem ipsum dolor sit.</h4>
+          <p>
+            (10) Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            rem incidunt mollitia numquam laborum quaerat exercitationem at
+            voluptates nulla? Quasi ratione, corrupti voluptatum odio omnis nam
+            tenetur unde alias reprehenderit quis iure eveniet optio quas
+            expedita. Nostrum porro quaerat similique quod quas? Nobis
+            perspiciatis itaque quae ipsum harum voluptas quam.
+          </p>
+        </div>
+        <div id="service-3" class="service">
+          <img src="./assets/photos/sinks.JPG" alt="some sinks" />
+          <h4>(11) Lorem ipsum dolor sit.</h4>
+          <p>
+            (12) Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            rem incidunt mollitia numquam laborum quaerat exercitationem at
+            voluptates nulla? Quasi ratione, corrupti voluptatum odio omnis nam
+            tenetur unde alias reprehenderit quis iure eveniet optio quas
+            expedita. Nostrum porro quaerat similique quod quas? Nobis
+            perspiciatis itaque quae ipsum harum voluptas quam.
+          </p>
+        </div>
+        <div id="service-4" class="service">
+          <img src="./assets/photos/sinks.JPG" alt="some sinks" />
+          <h4>(13) Lorem ipsum dolor sit.</h4>
+          <p>
+            (14) Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            rem incidunt mollitia numquam laborum quaerat exercitationem at
+            voluptates nulla? Quasi ratione, corrupti voluptatum odio omnis nam
+            tenetur unde alias reprehenderit quis iure eveniet optio quas
+            expedita. Nostrum porro quaerat similique quod quas? Nobis
+            perspiciatis itaque quae ipsum harum voluptas quam.
           </p>
         </div>
       </section>
 
-      <section id="experience-container">
-        <div id="experience-1">
-          <h2 id="experience-title">Experience counts!</h2>
-          <p id="experience-subtitle">Get it done right the first time!</p>
-        </div>
-        <div id="experience-2">
-          <div class="experience-item">
-            <h3 class="item-title">15 years</h3>
-            <p class="item-subtitle">Journeyman Painter</p>
-          </div>
-          <div class="experience-item">
-            <h3 class="item-title">Published</h3>
-            <p class="item-subtitle">Better Homes and Gardens</p>
-          </div>
-          <div class="experience-item">
-            <h3 class="item-title">100%</h3>
-            <p class="item-subtitle">Satisfaction Guaranteed</p>
-          </div>
-        </div>
-        <div id="experience-3">
-          <p class="experience-3-item">License #747340</p>
-          <p class="experience-3-item">Bonded</p>
-          <p class="experience-3-item">Insured</p>
+      <section id="about" class="grid">
+        <h3>(15) My Background</h3>
+        <div class="about-content">
+          <img src="./assets/photos/dana.jpeg" alt="Dana Cumings" />
+          <p class="leading">
+            (16) Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Repudiandae, suscipit? At maxime minima quidem cumque provident
+            vero, excepturi dolore accusamus perspiciatis quibusdam, sit
+            voluptas velit illo dicta quo natus esse? Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Illum ipsam alias, iste nam vero,
+            corrupti vitae, eius quas sunt recusandae rerum cumque culpa commodi
+            blanditiis quam sint dolor cum? Laboriosam animi exercitationem nisi
+            ab accusamus vel maxime deserunt omnis ullam quisquam, possimus
+            nostrum facilis assumenda veniam quos itaque sint asperiores.
+          </p>
         </div>
       </section>
 
-      <section id="customer-container">
-        <h2 id="customer-title">What Our Customers are Saying!</h2>
-        <div id="customer-container">
-          <div class="customer-card">
-            <h3 class="customer-id">Michelle T.</h3>
-            <p class="customer-location">Morro</p>
+      <section id="contact" class="grid">
+        <h3>(17) Contact Me</h3>
+        <div class="contact-content">
+          <div class="left">
+            <a href="tel:+17154952867" class="phone"
+              ><i class="fas fa-phone fa-2x"></i>
+              <p>+1 (715) 495-2867</p></a
+            >
+            <a href="mailto:hello@ecochicwalls.com" class="email">
+              <i class="fas fa-envelope fa-2x"></i>
+              <p>hello@ecochicwalls.com</p>
+            </a>
           </div>
+
+          <div class="h-divider">
+            <hr />
+            <p>OR</p>
+            <hr />
+          </div>
+          <div class="v-divider">
+            <hr />
+            <p>OR</p>
+            <hr />
+          </div>
+          <form>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <textarea placeholder="Your Message"></textarea>
+            <button class="button">Send</button>
+          </form>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="gallery" class="grid">
+        <h3>(18) Gallery</h3>
+        <div class="gallery-content">
+          <div id="lightgallery">
+            <a id="photo-1" href="./assets/photos/preview_1.JPG">
+              <img
+                src="./assets/photos/preview_1.JPG"
+                class="hover-shadow"
+                alt="stained cabinet"
+            /></a>
+            <a id="photo-2" href="./assets/photos/preview_2.JPG">
+              <img
+                src="./assets/photos/preview_2.JPG"
+                class="hover-shadow"
+                alt="stained cabinet"
+            /></a>
+
+            <a id="photo-3" href="./assets/photos/preview_3.JPG">
+              <img
+                src="./assets/photos/preview_3.JPG"
+                class="hover-shadow"
+                alt="stained cabinet"
+            /></a>
+            <a id="photo-4" href="./assets/photos/preview_4.JPG">
+              <img
+                src="./assets/photos/preview_4.JPG"
+                class="hover-shadow"
+                alt="stained cabinet"
+            /></a>
+          </div>
+
+          <a href="#"><button class="button">See More</button></a>
         </div>
       </section>
     </main>
+
+    <footer>
+      <div class="footer grid">
+        <p class="copyright">Copyright 2021 Eco Chic</p>
+        <p class="made-by">
+          Made by <a href="https://danielescoto.com/">Daniel Escoto</a>
+        </p>
+        <ul class="social">
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-yelp fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+
+    <!-- lightgallery -->
+    <script src="./node_modules/lightgallery/lightgallery.umd.js"></script>
+
+    <script src="./node_modules/lightgallery/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script src="./node_modules/lightgallery/plugins/zoom/lg-zoom.umd.js"></script>
+
+    <script type="text/javascript">
+      lightGallery(document.getElementById("lightgallery"), {
+        plugins: [lgZoom, lgThumbnail],
+      });
+    </script>
   </body>
 </html>
