@@ -56,6 +56,11 @@ textarea {
   src: url("../assets/fonts/Montserrat/Montserrat-Medium.ttf");
 }
 
+@font-face {
+  font-family: "Montserrat-thin";
+  src: url("../assets/fonts/Montserrat/Montserrat-Thin.ttf");
+}
+
 h1,
 h2,
 h3,
@@ -125,6 +130,12 @@ h4 {
   grid-row: 1;
   padding-bottom: 5px;
   align-self: center;
+}
+
+.gallery-text {
+  font-weight: 100;
+  font-family: "Montserrat-thin";
+  font-style: italic;
 }
 
 .fa-bars {
@@ -456,7 +467,7 @@ footer i {
 /* large tablet and laptop styles */
 @media screen and (min-width: 960px) {
   /* have nav show icons */
-  .site-nav span {
+  .site-nav .bar-icon {
     display: none;
   }
 

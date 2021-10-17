@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- lightgallery -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/lightgallery/css/lightgallery.css"
+    />
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/lightgallery/css/lg-zoom.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/lightgallery/css/lg-thumbnail.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1ce78da824.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Eco Chic - Gallery</title>
+  </head>
+  <body>
+    <nav class="site-nav grid">
+      <h1>
+        <a style="color: white" href="./index.html">Eco Chic</a>
+        <span class="gallery-text"> / gallery</span>
+      </h1>
+    </nav>
+
+    <main>
+      <section id="gallery" class="grid">
+        <div class="gallery-content">
+          <div id="lightgallery">
+            <a id="photo-1" href="./assets/photos/preview_1.JPG">
+              <img
+                src="./assets/photos/preview_1.JPG"
+                class="hover-shadow"
+                alt="stained cabinet"
+            /></a>
+            <a id="photo-2" href="./assets/photos/preview_2.JPG">
+              <img
+                src="./assets/photos/preview_2.JPG"
+                class="hover-shadow"
+                alt="stained cabinet"
+            /></a>
+
+            <a id="photo-3" href="./assets/photos/preview_3.JPG">
+              <img
+                src="./assets/photos/preview_3.JPG"
+                class="hover-shadow"
+                alt="stained cabinet"
+            /></a>
+            <a id="photo-4" href="./assets/photos/preview_4.JPG">
+              <img
+                src="./assets/photos/preview_4.JPG"
+                class="hover-shadow"
+                alt="stained cabinet"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer grid">
+        <p class="copyright">Copyright 2021 Eco Chic</p>
+        <p class="made-by">
+          Made by <a href="https://danielescoto.com/">Daniel Escoto</a>
+        </p>
+        <ul class="social">
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-yelp fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- lightgallery -->
+    <script src="./assets/lightgallery/lightgallery.umd.js"></script>
+
+    <script src="./assets/lightgallery/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script src="./assets/lightgallery/plugins/zoom/lg-zoom.umd.js"></script>
+
+    <script type="text/javascript">
+      lightGallery(document.getElementById("lightgallery"), {
+        plugins: [lgZoom, lgThumbnail],
+        licenseKey: "D9412E31-C26D416D-82BE48B8-009FDF2F",
+      });
+    </script>
+  </body>
+</html>
