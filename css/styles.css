@@ -50,6 +50,12 @@ textarea {
   color: #000000;
 }
 
+input:focus,
+textarea:focus {
+  outline: none !important;
+  box-shadow: 0 0 5px #17940b;
+}
+
 /* fonts */
 @font-face {
   font-family: "Montserrat";
