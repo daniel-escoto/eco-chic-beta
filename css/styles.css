@@ -249,6 +249,22 @@ h4 {
   text-align: left;
 }
 
+#paint {
+  display: flex;
+  flex-direction: column;
+  background-color: #b8bddf;
+  border-color: #8289b4;
+}
+
+#paint img {
+  width: auto;
+}
+
+#paint h4,
+p {
+  color: rgb(0, 0, 0);
+}
+
 /* about */
 #about {
   background: var(--primary);
@@ -545,6 +561,11 @@ footer i {
     grid-column: 5 / 9;
     grid-row: 3;
     margin-left: 0px;
+    margin-right: 20%;
+  }
+
+  #paint {
+    margin-left: 20%;
     margin-right: 20%;
   }
 
