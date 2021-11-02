@@ -48,6 +48,7 @@ textarea {
   border-radius: 15px;
   border: 2px solid #50c446;
   color: #000000;
+  font-size: 16px;
 }
 
 input:focus,
@@ -335,7 +336,6 @@ h4 {
   max-width: 400px;
   margin: 20px auto;
   text-align: center;
-  font-size: 16px;
 }
 
 #contact input,
