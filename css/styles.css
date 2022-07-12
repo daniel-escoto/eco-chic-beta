@@ -1,7 +1,7 @@
 /* variables */
 :root {
-  --primary: #126b0a;
-  --secondary: #ffffff;
+  --primary: #73ab25;
+  --secondary: #a9a9a9;
   --nav: #ffffff;
 }
 /* reset */
@@ -27,8 +27,8 @@ body {
 }
 
 .button {
-  background: #17940b;
-  border: 2px solid #17940b;
+  background: #73ab25;
+  border: 2px solid #73ab25;
   color: white;
   opacity: 0.8;
   padding: 8px 16px;
@@ -46,7 +46,7 @@ textarea {
   background: transparent;
   padding: 10px 16px;
   border-radius: 15px;
-  border: 2px solid #50c446;
+  border: 2px solid #73ab25;
   color: #000000;
   font-size: 16px;
 }
@@ -54,7 +54,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none !important;
-  box-shadow: 0 0 5px #17940b;
+  box-shadow: 0 0 5px #73ab25;
 }
 
 /* fonts */
@@ -88,10 +88,11 @@ h1 {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: lighter;
   font-style: italic;
-  color: var(--primary);
+  padding-right: 1em;
+
   z-index: 0;
 }
 
@@ -209,9 +210,9 @@ h4 {
 }
 
 #welcome a button {
-  background: #17940b;
+  background: #73ab25;
   padding: 8px 16px;
-  border: 2px solid #17940b;
+  border: 2px solid #73ab25;
 }
 
 /* services */
@@ -228,12 +229,14 @@ h4 {
 }
 
 .service {
+  /* white background color */
+  background-color: #ffffff;
   grid-column: 1 / 9;
   text-align: center;
 
-  margin: 15px 5%;
+  margin: 15px 1%;
   padding: 40px 45px;
-  border: 2px solid #39c731;
+  border: 2px solid #73ab25;
   border-radius: 25px;
 }
 
@@ -252,7 +255,7 @@ h4 {
 #paint {
   display: flex;
   flex-direction: column;
-  background-color: #b8bddf;
+  background-color: #70b1cde0;
   border-color: #8289b4;
 }
 
@@ -267,7 +270,8 @@ p {
 
 /* about */
 #about {
-  background: var(--primary);
+  /* background: var(--primary); */
+  background: #d6892c;
   /* TODO: Change to gradient */
   /* padding: 20px 15% 50px 15%;
   margin: 20px 0; */
@@ -479,7 +483,7 @@ footer i {
   }
 
   .service {
-    margin: 15px 10%;
+    margin: 15px 1%;
     padding: 40px 60px;
   }
 
